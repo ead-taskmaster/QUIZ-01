@@ -1,0 +1,222 @@
+/* Apply color scheme to different sections */
+body {
+    background-color: #0f2862 !important;
+    /* Purple Shadow */
+    color: white !important;
+}
+
+/* Navigation Menu Bar Styles */
+.navbar {
+    background-color: black;
+    /* Blue Popsicle */
+}
+
+.navbar a {
+    color: whitesmoke;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    /* Color of the hamburger icon */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    /* Default text color */
+}
+
+/* Apply hover effect */
+.navbar-nav .nav-link:hover {
+    background-color: #76c1d4;
+    /* Light Blue Backdrop */
+    color: #0f2862;
+    /* Text color on hover */
+}
+
+/* Welcome Section */
+#welcome {
+    background-color: #4f5f76;
+    /* Grey Blue Leaf */
+}
+
+.table {
+    color: #fff !important;
+}
+
+#teamMembers .card {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+    box-shadow: 2px 2px #111;
+}
+
+#teamMembers img {
+    width: 200px !important;
+    height: 200px !important;
+}
+
+/* Assign Tasks Section */
+#assignTasks {
+    background-color: #28518A;
+    /* Blue Popsicle */
+    /*#28518A  #0f2862 */
+    color: white !important;
+}
+
+/* Welcome Section Styles */
+.welcome-section {
+    background-color: #1f0f56;
+    /* Background color for the section */
+    padding: 60px 0;
+    /* Add padding to the top and bottom */
+    color: #fff;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Image Styles */
+.welcome-image {
+    display: block;
+    max-width: 350px;
+    /* Adjust the maximum width of the circular image */
+    height: auto;
+    margin-top: 20px;
+    /* Add some space between text and image */
+    border: 2px solid #ddd;
+    /* Optional: Add a border around the image */
+
+    border-radius: 50%;
+    float: right;
+}
+
+
+
+
+
+/* Developer Section Styles */
+#teamMembers {
+    background-color: #144272;
+    color: white;
+    padding: 40px 180px;
+    /* Add padding to the top and bottom */
+    max-width: 100%;
+
+}
+
+/* Card background color */
+.card {
+    background-color: #76c1d4;
+    /* Light Blue Backdrop */
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    color: white;
+    /* Text color for developer names */
+}
+
+.card-text {
+    font-size: 14px;
+    color: white;
+    /* Text color for developer roles */
+}
+
+/* Other CSS styles for the developer section go here */
+
+
+#assignTasks {
+    background-color: #16213E;
+    padding: 100px;
+    /* Add padding to the top and bottom */
+    max-width: 100%;
+}
+
+
+
+/*
+
+
+*/
+
+
+.team {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    /* Display in a row for team type and developers */
+}
+
+.team h2 {
+    font-size: 24px;
+    margin: 0;
+    /* Remove margin from the team name */
+}
+
+.team-type {
+    flex: 0 0 100px;
+    /* Fixed width for the team type */
+    text-align: left;
+    /* Align to the left */
+    margin-right: 20px;
+    /* Add spacing between team type and developers */
+}
+
+.developer {
+    flex: 1;
+    /* Let developers take up the remaining space */
+    display: flex;
+    flex-direction: column;
+    /* Display developers in a column */
+    align-items: center;
+    /* Center align developers within their section */
+    margin-top: 20px;
+}
+
+.developer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.developer p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Example: Style the progress bars */
+.progress {
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.container#hello {
+    background-color: #16213E;
+    color: white;
+    padding: 40px 180px;
+    /* Add padding to the top and bottom */
+    max-width: 100%;
+}
+
+footer {
+    font-size: 14px;
+    background-color: black !important;
+}

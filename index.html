@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Task Management</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">TaskMaster</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#createTask">Create Task</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#setDueDate">Set Due Date</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#teamMembers">Team Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#assignTasks">Assign Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#trackProgress">Track Progress</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#trackProgress">Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#trackProgress">Reminders</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Welcome to TaskMaster</h1>
+                    <p>
+                        TaskMaster is your go-to task management web application, designed to simplify the way you
+                        organize and track tasks for your projects. Whether you're involved in web development, app
+                        development, or machine learning, TaskMaster has you covered.
+                    </p>
+                    <p>
+                        With TaskMaster, you can effortlessly create tasks, set due dates, assign them to team members,
+                        and monitor progress. Our user-friendly interface makes task management a breeze, allowing you
+                        to focus on what matters most - getting things done.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/images/download.png" alt="TaskMaster Image" class="img-fluid welcome-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Task Section -->
+    <section class="container mt-4" id="createTask">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>Web Development</h2>
+                <select class="form-control">
+                    <option>Task 1 - Web Dev</option>
+                    <option>Task 2 - Web Dev</option>
+                    <option>Task 3 - Web Dev</option>
+                    <option>Task 4 - Web Dev</option>
+                    <option>Task 5 - Web Dev</option>
+                </select>
+            </div>
+            <div class="col-lg-4">
+                <h2>App Development</h2>
+                <select class="form-control">
+                    <option>Task 6 - App Dev</option>
+                    <option>Task 7 - App Dev</option>
+                    <option>Task 8 - App Dev</option>
+                    <option>Task 9 - App Dev</option>
+                    <option>Task 10 - App Dev</option>
+                </select>
+            </div>
+            <div class="col-lg-4">
+                <h2>Machine Learning</h2>
+                <select class="form-control">
+                    <option>Task 11 - ML</option>
+                    <option>Task 12 - ML</option>
+                    <option>Task 13 - ML</option>
+                    <option>Task 14 - ML</option>
+                    <option>Task 15 - ML</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Set Due Date Section -->
+    <section class="container mt-4" id="setDueDate">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Set Due Date</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="taskName">Task Name</label>
+                        <input type="text" class="form-control" id="taskName" placeholder="Enter Task Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="dueDate">Due Date</label>
+                        <div class="input-group date" id="dueDate" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" data-target="#dueDate"
+                                placeholder="Select Due Date" />
+                            <div class="input-group-append" data-target="#dueDate" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Set Due Date</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Members Section -->
+    <section class="container mt-4" id="teamMembers">
+        <h2>Developers</h2>
+        <div class="row">
+            <!-- Team Member 1 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/profile.jpg" class="card-img-top rounded-circle" alt="Team Member 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Abdullah Shaikh</h5>
+                        <p class="card-text">Role: Front-End Developer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/1.jpg" class="card-img-top rounded-circle" alt="Team Member 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="card-text">Role: Back-End Developer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/3.jpg" class="card-img-top rounded-circle" alt="Team Member 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Johnson</h5>
+                        <p class="card-text">Role: Android Developer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/4.jpg" class="card-img-top rounded-circle" alt="Team Member 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Emily Davis</h5>
+                        <p class="card-text">Role: Python Developer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more team members -->
+            <!-- Team Member 5 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/5.jpg" class="card-img-top rounded-circle" alt="Team Member 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Robert Wilson</h5>
+                        <p class="card-text">Role: Java Developer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 6 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/6.jpg" class="card-img-top rounded-circle" alt="Team Member 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Muhammad Fahad</h5>
+                        <p class="card-text">Role: Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 7 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/10.jpg" class="card-img-top rounded-circle" alt="Team Member 7">
+                    <div class="card-body">
+                        <h5 class="card-title">David Brown</h5>
+                        <p class="card-text">Role: IOS Developer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 8 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/images/8.jpg" class="card-img-top rounded-circle" alt="Team Member 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Laura Martinez</h5>
+                        <p class="card-text">Role: ML Enginner</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more team members -->
+        </div>
+    </section>
+
+    <section class="team">
+        <h2>Team A</h2>
+        <div class="developer">
+            <img src="./assets/images/1.jpg" alt="Developer 1">
+            <p>John Doe</p>
+        </div>
+        <div class="developer">
+            <img src="./assets/images/2.jpg" alt="Developer 2">
+            <p>Jane Smith</p>
+        </div>
+        <div class="developer">
+            <img src="./assets/images/3.jpg" alt="Developer 3">
+            <p>Mike Johnson</p>
+        </div>
+    </section>
+
+    <section class="team">
+        <h2>Team B</h2>
+        <div class="developer">
+            <img src="./assets/images/4.jpg" alt="Developer 4">
+            <p>Alice Brown</p>
+        </div>
+        <div class="developer">
+            <img src="./assets/images/5.jpg" alt="Developer 5">
+            <p>Bob Wilson</p>
+        </div>
+        <div class="developer">
+            <img src="./assets/images/6.jpg" alt="Developer 6">
+            <p>Muhamamd Fahad</p>
+        </div>
+    </section>
+
+    <section class="team">
+        <h2>Team C</h2>
+
+        <div class="developer">
+            <img src="./assets/images/7.jpg" alt="Developer 7">
+            <p>Tom Clark</p>
+        </div>
+        <div class="developer">
+            <img src="./assets/images/8.jpg" alt="Developer 8">
+            <p>Lisa White</p>
+        </div>
+        <div class="developer">
+            <img src="./assets/images/profile.jpg" alt="Developer 9">
+            <p>Abdullah Shaikh</p>
+        </div>
+    </section>
+
+    <!-- Assign Tasks Section -->
+    <section class="container" id="assignTasks">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Assign Tasks</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="developerSelect">Select Team:</label>
+                        <select class="form-control" id="developerSelect">
+                            <option>TEAM A</option>
+                            <option>TEAM B</option>
+                            <option>TEAM C</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskSelect">Select Task:</label>
+                        <select class="form-control" id="taskSelect">
+                            <option>Task 1</option>
+                            <option>Task 2</option>
+                            <option>Task 3</option>
+                            <option>Task 4</option>
+                            <option>Task 5</option>
+                            <option>Task 6</option>
+                            <option>Task 7</option>
+                            <option>Task 8</option>
+                            <option>Task 9</option>
+                            <option>Task 10</option>
+                            <!-- Add more tasks -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="prioritySelect">Priority:</label>
+                        <select class="form-control" id="prioritySelect">
+                            <option>High</option>
+                            <option>Low</option>
+                            <option>Moderate</option>
+                            <option>Very High</option>
+                        </select>
+                    </div>
+
+
+
+                    <button type="submit" class="btn btn-primary">Assign Task</button>
+                </form>
+            </div>
+        </div>
+    </section><!-- Task Progress Section -->
+    <section class="container" id="hello" id="trackProgress">
+        <h2>Task Progress</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Progress</th>
+                        <th>Team</th>
+                        <th>Assigned Date</th>
+                        <th>Due Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Task 1</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30"
+                                    aria-valuemin="0" aria-valuemax="100">30%</div>
+                            </div>
+                        </td>
+                        <td>Team A</td>
+                        <td>2023-10-15</td>
+                        <td>2023-11-15</td>
+                    </tr>
+                    <tr>
+                        <td>Task 2</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100">60%</div>
+                            </div>
+                        </td>
+                        <td>Team B</td>
+                        <td>2023-10-20</td>
+                        <td>2023-11-10</td>
+                    </tr>
+                    <tr>
+                        <td>Task 3</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                                    aria-valuemin="0" aria-valuemax="100">40%</div>
+                            </div>
+                        </td>
+                        <td>Team C</td>
+                        <td>2023-10-25</td>
+                        <td>2023-11-05</td>
+                    </tr>
+                    <tr>
+                        <td>Task 4</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">75%</div>
+                            </div>
+                        </td>
+                        <td>Team C</td>
+                        <td>2023-10-30</td>
+                        <td>2023-11-20</td>
+                    </tr>
+                    <tr>
+                        <td>Task 5</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100">90%</div>
+                            </div>
+                        </td>
+                        <td>Team C</td>
+                        <td>2023-11-05</td>
+                        <td>2023-11-25</td>
+                    </tr>
+                    <tr>
+                        <td>Task 6</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100">50%</div>
+                            </div>
+                        </td>
+                        <td>Team A</td>
+                        <td>2023-11-10</td>
+                        <td>2023-11-30</td>
+                    </tr>
+                    <tr>
+                        <td>Task 7</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100">70%</div>
+                            </div>
+                        </td>
+                        <td>Team B</td>
+                        <td>2023-11-15</td>
+                        <td>2023-12-05</td>
+                    </tr>
+                    <tr>
+                        <td>Task 8</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20"
+                                    aria-valuemin="0" aria-valuemax="100">20%</div>
+                            </div>
+                        </td>
+                        <td>Team A</td>
+                        <td>2023-11-20</td>
+                        <td>2023-12-10</td>
+                    </tr>
+                    <tr>
+                        <td>Task 9</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">85%</div>
+                            </div>
+                        </td>
+                        <td>Team B</td>
+                        <td>2023-11-25</td>
+                        <td>2023-12-15</td>
+                    </tr>
+                    <tr>
+                        <td>Task 10</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45"
+                                    aria-valuemin="0" aria-valuemax="100">45%</div>
+                            </div>
+                        </td>
+                        <td>Team C</td>
+                        <td>2023-12-01</td>
+                        <td>2023-12-20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="text-center py-3">
+        &copy; 2023 TaskMaster - All Rights Reserved
+    </footer>
+
+
+
+
+
+    <!-- Include Bootstrap CSS and JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include Font Awesome for the calendar icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Include Bootstrap Datepicker CSS and JS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
+
+
+</body>
+
+</html>
